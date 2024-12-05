@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextKonyvCime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Köny címe"/>
+
+    <EditText
+        android:id="@+id/editTextSzerzoNeve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Szerző neve"/>
+
+    <EditText
+        android:id="@+id/editTextOldalakSzama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Oldalak száma"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/konyvekListaView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Törlés"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konyv hozzáadása" />
+</LinearLayout>
